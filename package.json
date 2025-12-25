@@ -1,0 +1,21 @@
+{
+  "name": "node_25_compile_error",
+  "version": "1.0.0",
+  "description": "NAN (Native Abstractions for Node.js) example",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "build": "node-gyp configure && node-gyp build",
+    "clean": "node-gyp clean",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^10.0.1"
+  }
+}
